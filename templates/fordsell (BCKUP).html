@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/.css') }}" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a href="{{url_for('home')}}" class="logo"> <span>Check</span>Ford </a>
+
+      <nav class="navbar">
+        <a href="{{url_for('home')}}">home</a>
+        <a href="{{url_for('dashboard')}}">Dashboard</a>
+        <a href="{{url_for('fordbuy')}}">FordBuy</a>
+        <a href="{{url_for('fordsell')}}">FordSell</a>
+      </nav>
+    </header>
+  </div>
+  </nav>
+  <!--NAVBARRRR-->
+    
+  <div class="login">
+    <h1>FordSell - Prediksi Harga Mobil</h1>
+    <!-- Main Input For Receiving Query to our ML -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="year" placeholder="Year" required="required" />
+      <input type="text" name="mileage" placeholder="Mileage" required="required" />
+      <input type="text" name="mpg" placeholder="Car Miles per Gallon (mpg)" required="required" />
+      <input type="text" name="enginesize" placeholder="Car Engine Size (in liter)" required="required" />
+      <input type="text" name="transmission_manual" placeholder="Is the Transmission manual? YES : 1 NO : 0" required="required" />
+      <input type="text" name="transmission_Semi-Auto" placeholder="Is the transmission semi-auto? YES : 1 NO : 0" required="required" />
+      <input type="text" name="fuelType_Hybrid" placeholder="Is the the car using Hybrid fuel type? YES : 1 NO : 0" required="required" />
+      <input type="text" name="fuelType_Petrol" placeholder="Is the the car using Petrol fuel type? YES : 1 NO : 0" required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      </form>
+
+    <br>
+    </br>
+    {{ prediction_text }}
+
+  </div>
+
+
+  </body>
+</html>

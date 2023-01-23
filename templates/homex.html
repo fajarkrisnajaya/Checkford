@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CHECKFORD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylefordbuy.css') }}" />
+</head>
+<body>
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="{{url_for('home')}}" class="logo"> <span>Check</span>Ford </a>
+
+    <nav class="navbar">
+      <a href="{{url_for('home')}}">home</a>
+      <a href="{{url_for('dashboard')}}">Dashboard</a>
+      <a href="{{url_for('fordbuy')}}">FordBuy</a>
+      <a href="{{url_for('fordsell')}}">FordSell</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <h3 data-speed="-2" class="home-parallax">Cara Cerdas Beli Mobil Lebih Hemat</h3>
+
+    <img data-speed="5" class="home-parallax" src="{{url_for('static', filename='mobil_carousel1.png')}}" alt="" />
+  </section>
+
+<br></br>
+<br></br>
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/ford-logo_0.jpg" class="Image" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-8">
+      <div class="well">
+       <p>Ford Motor Company adalah sebuah produsen mobil asal Amerika Serikat yang didirikan oleh Henry Ford di Dearborn, dekat Detroit, Michigan. 
+         Perusahaan ini didirikan pada 16 Juni 1903.
+          Dalam satu dekade, perusahaan ini memimpin dalam produksi dengan konsep jalur perakitan.
+         Setelah mobil modern pertama dibuat tahun 1886 oleh penemu berkebangsaan Jerman Karl Benz (Benz Patent-Motorwagen), banyak metode produksi yang lebih efisien dibutuhkan untuk 
+         membuat mobil lebih terjangkau bagi kalangan menengah, misalnya penemuan jalur perakitan berjalan pada 1913. 
+         </p>   
+      </div>
+      <button type="button" class="btn btn-primary"> Baca Selengkapnya</button>
+
+      
+    </div>
+  </div>
+</div><br>
+
+<div class="container text-center">    
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='dashboard.png')}}" class="img-responsive" style="width:100%" alt="Image">
+      <h3>Dashboard</h3>
+      <p>Mari eksplorasi spesifikasi mobil yang akan di jual</p>   
+    </div>
+    <div class="col-sm-4"> 
+      <img src="{{url_for('static', filename='fordbuy.png')}}" class="img-responsive" style="width:100%" alt="Image">
+      <h3>FordBuy</h3>
+      <p>Mari beli mobil keinginanmu dengan harga terjangkau disini</p>   
+    </div>
+    <div class="col-sm-4">
+      <img src="{{url_for('static', filename='fordsell.png')}}" class="img-responsive" style="width:100%" alt="Image">
+      <h3>FordSell</h3>
+      <p>Mari jual mobilmu dengan prediksi harga yang akan kami tawarkan</p>
+    </div>
+  </div>
+</div><br>
+</body>
+<footer class="mt-5 pt-5 pb-5 footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xs-12 about-company">
+        <h2>Heading</h2>
+        <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+        <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+      </div>
+      <div class="col-lg-3 col-xs-12 links">
+        <h4 class="mt-lg-0 mt-sm-3">Social Links</h4>
+          <ul class="m-0 p-0">
+            
+            <li>- <a href="#">Instagram</a></li>
+            <li>- <a href="#">Twitter</a></li>
+            <li>- <a href="#">Facebook</a></li>
+            <li>- <a href="#">Linked in</a></li>
+            <li>- <a href="#">Pinterest</a></li>
+            <li>- <a href="#">Linkedin</a></li>  
+          
+          
+          
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12 location">
+        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+        <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+        <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col copyright">
+        <p class=""><small class="text-white-50">© 2021. Kelompok 5 Algortima Pemrograman II</small></p>
+      </div>
+    </div>
+  </footer>
+
+</html>

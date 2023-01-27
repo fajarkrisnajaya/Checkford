@@ -24,7 +24,6 @@ This project has four major parts :
 ```
 python model.py
 ```
-This would create a serialized version of our model into a file model.pkl
 
 2. Run app.py using below command to start Flask API
 ```

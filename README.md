@@ -6,33 +6,3 @@ Fordpredictor is a web application that uses linear regression to predict the pr
 
 This project is intended for educational and demonstration purposes only. It is available on Github for anyone who is interested in learning about machine learning and web development using Flask and Python.
 
-### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
-
-Flask version: 0.12.2
-conda install flask=0.12.2  (or) pip install Flask==0.12.2
-
-### Project Structure
-This project has four major parts :
-1. model.py - This contains code fot our Machine Learning model 
-2. app.py - This contains Flask APIs 
-3. template - This folder contains the HTML template (index.html)
-4. static - This folder contains the css folder with style.css file which has the styling required for out index.html file.
-
-### Running the project
-1. Ensure that you are in the project home directory. Create the machine learning model by running below command from command prompt -
-```
-python model.py
-```
-
-2. Run app.py using below command to start Flask API
-```
-python app.py
-```
-By default, flask will run on port 5000.
-
-3. Navigate to URL http://127.0.0.1:5000/ (or) http://localhost:5000
-
-You should be able to view the homepage.
-check the output here: http://127.0.0.1:5000/predict
-
